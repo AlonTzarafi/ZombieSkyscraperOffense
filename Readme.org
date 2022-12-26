@@ -1,0 +1,21 @@
+* Zombie Skyscraper Offense
+**** Uses Unity ECS (Entity Component System) and GPU instancing for crowd simulation
+**** Screenshot: [[ZombieSkyscraperOffense.png]]
+**** Gameplay:
+Some 20,000 zombies storm a skyscraper of 200 stories with 1,000 people in it
+
+Each zombie that enters building kills 1 person
+
+But if player-controlled zombie reaches building it kills 40 people
+
+If human count reaches 0 before zombies, you win
+***** Controls:
+Take control of a zombie with Z
+
+Walk with WASD
+
+Dodge with SPACE
+
+Enter spectator mode with X,C,V,B
+**** Made in Hanuka Game Jam by MakeGamesJLM https://makegamesjlm.itch.io/
+**** Additional graphics: Hallel Rosenberg

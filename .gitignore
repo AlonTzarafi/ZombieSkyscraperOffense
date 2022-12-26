@@ -1,0 +1,63 @@
+## =============== #
+## Unity generated #
+## =============== #
+[Tt]emp/
+[Oo]bj/
+[Ll]ibrary*/
+
+# ================= #
+# Publish Directory #
+# ================= #
+[Pp]ublish/
+bin/*
+!bin/folder-for-builds.txt
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+/*.csproj
+/*.sln*
+*.userprefs
+*.pidb
+*.suo
+*.user
+*.unityproj
+*.booproj
+Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+.vs
+*/*/bin/
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+*.suo
+
+# ========== #
+# FMOD crap  #
+# ========== #
+Assets/FMODStudioCache.asset
+Assets/FMODStudioCache.asset.meta
+Assets/StreamingAssets/*.bank
+fmod.log
+fmod_editor.log
+FMODStudioCache.asset
+
+# =========== #
+# Convenience #
+# =========== #
+[Bb]uilds/
+[Ss]amples/
+Logs/
+.idea/
+
+# =========== #
+# Unity ECS   #
+# =========== #
+Assets/SceneDependencyCache*
