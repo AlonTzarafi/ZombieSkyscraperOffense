@@ -6,8 +6,6 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
 
-// [UpdateAfter(typeof(UnityEngine.PlayerLoop.PreLateUpdate.ParticleSystemBeginUpdateAll))]
-// [ExecuteInEditMode]
 public partial class GPUInstanceHelperSystem : SystemBase
 {
     private Matrix4x4[] matricesArraySource;
@@ -71,7 +69,6 @@ public partial class GPUInstanceHelperSystem : SystemBase
                 .ForEach((in int entityInQueryIndex, in LocalToWorld localToWorld) =>
                 {
                     var matrix = localToWorld.Value;
-                    // matrix *= float4x4.RotateX(math.radians(90));
                     arrToCopyTo[entityInQueryIndex] = matrix;
                     meshTypeEntityCountQueueParallel.Enqueue(true);
                 })

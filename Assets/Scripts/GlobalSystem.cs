@@ -64,7 +64,9 @@ public partial class GlobalSystem : SystemBase
 
         UpdateEndgame();
 
-        Dependency.Complete();
+        if (SystemSettings.completeSystemOnUpdateImmediately) {
+            Dependency.Complete();
+        }
 
         firstFrameAlreadyRan = true;
     }
@@ -217,7 +219,6 @@ public partial class GlobalSystem : SystemBase
                     var projectilePosition = projectilesToRemovePositionsFinal[i];
 
                     var isMicrowave = SystemAPI.HasComponent<Microwave>(projectileEntity);
-                    
 
                     var microwaveHitPosition = projectilePosition;
                     microwaveHitPosition.y = 0f;

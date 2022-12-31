@@ -114,6 +114,8 @@ public partial class ZombieWalkSystem : SystemBase
 
         Dependency = jobHandle;
 
-        Dependency.Complete();
+        if (SystemSettings.completeSystemOnUpdateImmediately) {
+            Dependency.Complete();
+        }
     }
 }
